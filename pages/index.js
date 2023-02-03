@@ -90,7 +90,7 @@ export default function Home() {
     <div className={styles.messageContainer}>
       <Message
         author="StarburgerAI"
-        text="I noticed you had a recent experience with us 🤔🍔🍔."
+        text="Thanks for jumping on to the Starburger feedback chat 🙏.  We are here to help and serve… 😃 What can we do for you?"
         timestamp={<NoSsr>{timestamp}</NoSsr> }>
       </Message>
     </div>
