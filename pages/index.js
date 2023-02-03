@@ -131,7 +131,7 @@ export default function Home() {
 
       </div>
       <footer className={styles.footer}>
-        <p>Powered by <a href="https://www.rivaltech.com/">Rival</a></p>
+        <p>Powered by <a href="https://www.rivaltech.com/"><img src="Rival_logo_2x.png" alt="Rival logo" style={{height:"20px"}} /></a></p>
       </footer>
 </AppBar>
 
