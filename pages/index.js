@@ -57,7 +57,7 @@ export default function Home() {
       }
       let currentTimestamp2 = new Date().toLocaleString();
 
-      setHybrids([...hybrids, { text: animal, author: "User", timestamp: currentTimestamp }, { text: data.result, author: "RivalAI", timestamp: currentTimestamp2 }]);
+      setHybrids([...hybrids, { text: animal, author: "User", timestamp: currentTimestamp }, { text: data.result, author: "StarburgerAI", timestamp: currentTimestamp2 }]);
       setAnimalInput("");
       setIsLoading(false);
     } catch (error) {
@@ -70,11 +70,11 @@ export default function Home() {
   return (
     <div className={styles.container} style={{ height: "100vh" }}>
       <Head>
-        <title>Speak to RivalAI and leave a Review</title>
+        <title>Speak to StarburgerAI and leave a Review</title>
         <link rel="icon" href="/starb.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
       </Head>
-      <AppBar position="sticky" elevation={0} style={{ backgroundColor: "rgb(240,240,240)", width: "100%", top: 0}}>
+      <AppBar position="sticky" elevation={0} style={{ backgroundColor: "rgb(240,240,240)", width: "100%", top: 0, alignItems: "center"}}>
             <Toolbar>
               <img src="/starb.png" style={{ height: '50px', margin: "5px"}} />
             </Toolbar>
@@ -82,15 +82,15 @@ export default function Home() {
       <div className={styles.scrollableContainer} style={{ width: "100%", height: "80vh" }} ref={scrollableContainerRef}>
       <div className={styles.messageContainer}>
     <Message
-        author="RivalAI"
+        author="StarburgerAI"
         text="Hey... 👋"
         timestamp={<NoSsr>{timestamp}</NoSsr> }>
       </Message>
     </div>
     <div className={styles.messageContainer}>
       <Message
-        author="RivalAI"
-        text="I noticed you had a recent experience with one of our products or events 🤔"
+        author="StarburgerAI"
+        text="I noticed you had a recent experience with 🤔🍔🍔."
         timestamp={<NoSsr>{timestamp}</NoSsr> }>
       </Message>
     </div>
