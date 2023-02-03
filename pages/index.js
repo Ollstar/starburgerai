@@ -37,7 +37,7 @@ export default function Home() {
 
   async function onSubmit(event, animal = animalInput) {
     event.preventDefault();
-
+    setAnimalInput("");
     let currentTimestamp = new Date().toLocaleString();
     setHybrids([...hybrids, { text: animal, author: "User", timestamp: currentTimestamp }]);
 
@@ -119,6 +119,7 @@ export default function Home() {
             className={styles.input}
             placeholder="Enter input message"
             value={animalInput}
+            disabled={isLoading}
             onChange={e => setAnimalInput(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' ? onSubmit(e) : null}
           />
