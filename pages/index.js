@@ -117,7 +117,7 @@ export default function Home() {
         <form className={styles.form} onSubmit={onSubmit}>
           <input type="text"
             className={styles.input}
-            placeholder="Enter input message"
+            placeholder="Enter message..."
             value={animalInput}
             disabled={isLoading}
             onChange={e => setAnimalInput(e.target.value)}
@@ -125,7 +125,7 @@ export default function Home() {
           />
                   </form>
           <button type="submit" className={styles.submit} disabled={isLoading} onClick={(e) => onSubmit(e)}>
-            {isLoading ? "Generating..." : "SUBMIT"}
+            {isLoading ? "Processing..." : "SUBMIT"}
           </button>
 
 
