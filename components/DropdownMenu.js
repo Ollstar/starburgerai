@@ -14,10 +14,10 @@ const options = [
   ];
 
 
-  const DropdownMenu = ({onSubmit, setAnimalInput}) => {
+  const DropdownMenu = ({onSubmit, setMessageInput}) => {
 
      const handleOptionsClick = (option, e) => {
-        setAnimalInput(option);
+        setMessageInput(option);
         setTimeout(() => {
             onSubmit(e, option);
             }, 500);

@@ -66,6 +66,7 @@
   padding: 15px;
   border-radius: 10px;
   margin-left: 10px;
+  border: 1px solid gray;
   font-family: "lato", sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -74,17 +75,14 @@
 
 .input {
   width: 100%;
-  border: 1px solid gray;
-
 }
 
 .submit {
   font-weight: bold;
   width: 30%;
-  border: 0px solid gray;
-
   background-color: rgb(102,35,35	);
   color: white;
+  padding: 15px;
   margin-right: 10px;
   font-family: "lato", sans-serif;
 
