@@ -1,16 +1,16 @@
 import React from "react";
 import { Box, Avatar } from "@mui/material";
 const options = [
-    "Prompt1",
-    "Option 2",
-    "Option 3",
-    "Option 4",
-    "Option 5",
-    "Option 6",
-    "Option 7",
-    "Option 8",
-    "Option 9",
-    "Option 10"
+    "Where is the nearest Starburger?",
+    "What is the best Starburger?",
+    "What is the worst topping?",
+    "What is the best coupon from Starburger?",
+    "What is the store hours Starburger?",
+    "What is the refund policy?",
+    "How do I get a job at Starburger?",
+    "How do I sign up for the Starburger newsletter?",
+    "How do I get a Starburger gift card?",
+    "How do I leave a review for Starburger?"
   ];
 
 
@@ -18,6 +18,9 @@ const options = [
 
      const handleOptionsClick = (option, e) => {
         setAnimalInput(option);
+        setTimeout(() => {
+            onSubmit(e, option);
+            }, 500);
     };
     return (
       <Box style={{ display: "flex", flexDirection: "row", width: "100%", height: "200px", overflowY: "scroll" }}>
