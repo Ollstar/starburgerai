@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import MenuIcon from '@mui/icons-material/Menu';
+import { Margin } from "@mui/icons-material";
 export default function Home() {
   const [animalInput, setAnimalInput] = useState("");
   const [hybrids, setHybrids] = useState([]);
@@ -107,7 +108,7 @@ export default function Home() {
           <Grid
             container
           > <Grid item style={{ flex: 1 }}>
-              <Avatar alt="Logo of Starburger" src="/starb.png" sx={{ width: 50, height: 50 }} />
+              <Avatar alt="Logo of Starburger" src="/starb.png" sx={{ }} />
             </Grid>
             <Grid item>
               <IconButton
@@ -115,8 +116,8 @@ export default function Home() {
                 aria-controls="long-menu"
                 aria-haspopup="true"
                 onClick={handleClick}
-
-              > <MenuIcon />         </IconButton>            </Grid>
+sx={{color: "rgb(102,35,35	)"}}
+              > <MenuIcon/>         </IconButton>            </Grid>
 
               <Menu id="long-menu" anchorEl={anchorEl} keepMounted open={open} onClose={handleClose} PaperProps={{
                 style: {
@@ -182,11 +183,11 @@ export default function Home() {
 
 
         </div>
-        <footer className={styles.footer}>
+
+      </AppBar>
+      <footer className={styles.footer}>
           <p>Powered by <a href="https://www.rivaltech.com/">Rival</a></p>
         </footer>
-      </AppBar>
-
     </div >
   );
 }
